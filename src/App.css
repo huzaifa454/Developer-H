@@ -1,0 +1,11 @@
+body {
+    background-image: url('./assets/image.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+  }
+  
