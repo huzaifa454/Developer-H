@@ -1,14 +1,19 @@
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Service = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-center space-y-8 cursor-default">
       <div className="text-white text-3xl sm:text-4xl font-extrabold">
-        <h1>
-          <span className="text-3xl text-primary font-extrabold">My </span>
-          <br />
-          <h2 className="font-semibold">Services</h2>
-        </h1>
+        <motion.h1
+          className="text-primaryfont-serif text-primary text-6xl md:text-8xl font-extrabold relative"
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 1 }}
+        >
+          My<span className="text-white"> Services</span>
+        </motion.h1>
       </div>
 
       <div className="flex flex-col sm:flex-row sm:space-x-8 sm:mt-8 space-y-8 sm:space-y-0">

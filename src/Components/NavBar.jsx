@@ -1,7 +1,14 @@
 import { useState } from "react";
 import HamburgerMenu from "react-hamburger-menu";
 import { Link } from "react-scroll";
-import { FaHome, FaUserAlt, FaServicestack, FaProjectDiagram, FaEnvelope } from "react-icons/fa"; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouse,
+  faUser,
+  faBriefcase,
+  faFolderOpen,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -33,7 +40,7 @@ const NavBar = () => {
             duration={500}
             className="hover:text-primary transition-colors duration-300"
           >
-            <FaHome className="inline mr-2" />
+            <FontAwesomeIcon icon={faHouse} className="mr-2 text-primary" />
             Home
           </Link>
           <Link
@@ -42,7 +49,7 @@ const NavBar = () => {
             duration={500}
             className="hover:text-primary transition-colors duration-300"
           >
-            <FaUserAlt className="inline mr-2" />
+            <FontAwesomeIcon icon={faUser} className="mr-2 text-primary" />
             About
           </Link>
           <Link
@@ -51,7 +58,7 @@ const NavBar = () => {
             duration={500}
             className="hover:text-primary transition-colors duration-300"
           >
-            <FaServicestack className="inline mr-2" />
+            <FontAwesomeIcon icon={faBriefcase} className="mr-2 text-primary" />
             Services
           </Link>
           <Link
@@ -60,7 +67,10 @@ const NavBar = () => {
             duration={500}
             className="hover:text-primary transition-colors duration-300"
           >
-            <FaProjectDiagram className="inline mr-2" />
+            <FontAwesomeIcon
+              icon={faFolderOpen}
+              className="mr-2 text-primary"
+            />
             Projects
           </Link>
           <Link
@@ -69,7 +79,7 @@ const NavBar = () => {
             duration={500}
             className="hover:text-primary transition-colors duration-300"
           >
-            <FaEnvelope className="inline mr-2" />
+            <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-primary" />
             Contact
           </Link>
         </div>
@@ -98,7 +108,7 @@ const NavBar = () => {
             className="py-2 hover:text-primary transition-colors duration-300"
             onClick={() => setOpen(false)}
           >
-            <FaHome className="inline mr-2" />
+            <FontAwesomeIcon icon={faHouse} className="mr-2" />
             Home
           </Link>
           <Link
@@ -108,7 +118,7 @@ const NavBar = () => {
             className="py-2 hover:text-primary transition-colors duration-300"
             onClick={() => setOpen(false)}
           >
-            <FaUserAlt className="inline mr-2" />
+            <FontAwesomeIcon icon={faUser} className="mr-2" />
             About
           </Link>
           <Link
@@ -118,7 +128,7 @@ const NavBar = () => {
             className="py-2 hover:text-primary transition-colors duration-300"
             onClick={() => setOpen(false)}
           >
-            <FaServicestack className="inline mr-2" />
+            <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
             Services
           </Link>
           <Link
@@ -128,7 +138,7 @@ const NavBar = () => {
             className="py-2 hover:text-primary transition-colors duration-300"
             onClick={() => setOpen(false)}
           >
-            <FaProjectDiagram className="inline mr-2" />
+            <FontAwesomeIcon icon={faFolderOpen} className="mr-2" />
             Projects
           </Link>
           <Link
@@ -138,7 +148,7 @@ const NavBar = () => {
             className="py-2 hover:text-primary transition-colors duration-300"
             onClick={() => setOpen(false)}
           >
-            <FaEnvelope className="inline mr-2" />
+            <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
             Contact
           </Link>
         </div>

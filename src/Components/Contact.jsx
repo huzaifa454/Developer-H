@@ -1,6 +1,7 @@
 import React from "react";
 import pic from "../assets/image2.png";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -8,7 +9,15 @@ const Contact = () => {
       id="contact"
       className="min-h-screen flex flex-col justify-center items-center text-white cursor-default px-6 py-8"
     >
-      <h1 className="text-4xl font-extrabold text-center mb-4">Get in Touch</h1>
+      <motion.h1
+        className="text-primaryfont-serif text-primary text-6xl md:text-8xl font-extrabold relative"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 1 }}
+      >
+        <span className="text-white">Get in</span>Touch
+      </motion.h1>
       <p className="text-center text-lg mt-4 max-w-2xl">
         We are excited to collaborate and bring your ideas to life. Whether you
         have a question or want to discuss a potential project, feel free to
