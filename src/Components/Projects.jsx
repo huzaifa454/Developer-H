@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   const projectlinks = [
-    { url: "https://github.com/yourusername/project2", isLive: false },
+    { url: "https://carfixpro.vercel.app/", isLive: true },
     { url: "https://github.com/yourusername/project3", isLive: false },
-    { url: "https://lamp-app-ten.vercel.app/", isLive: false },
+    { url: "https://lamp-app-ten.vercel.app/", isLive: true },
     { url: "https://github.com/yourusername/project5", isLive: false },
     { url: "https://ductscareflorida.com", isLive: true },
   ];
